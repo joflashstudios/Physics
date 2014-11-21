@@ -8,7 +8,12 @@ namespace Physics.Core
 {
     public abstract class Machine
     {
-        private Dictionary<string, InputNode> Inputs { get; set; }
-        private Dictionary<string, OutputNode> Outputs { get; set; }
+        internal Dictionary<string, InputNode> Inputs { get { return _Inputs; } }
+        internal Dictionary<string, OutputNode> Outputs { get { return _Outputs; } }
+
+        private Dictionary<string, InputNode> _Inputs = new Dictionary<string, InputNode>();
+        private Dictionary<string, OutputNode> _Outputs = new Dictionary<string, OutputNode>();
+
+        public abstract void Compute();
     }
 }

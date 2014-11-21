@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Numerics;
 
 namespace Physics.Core
 {
@@ -11,16 +12,21 @@ namespace Physics.Core
     /// </summary>
     class Value
     {
-        public Value(double value, Unit unit)
+        public Value(BigRational value, Unit unit)
         {
-            _Value = value;
+            _Number = value;
             _Unit = unit;
         }
-
-        public double Value { get { return _Value; } }
+        
+        public BigRational Number { get { return _Number; } }
         public Unit Unit { get { return _Unit; } }
 
-        private double _Value = 0;
-        private Unit _Unit;
+        private BigRational _Number = new BigRational(0d);
+        private Unit _Unit = Unit.Dimensionless;
+
+        public override string ToString()
+        {
+            return Number.ToString() + " " + Unit.ToString();
+        }
     }
 }

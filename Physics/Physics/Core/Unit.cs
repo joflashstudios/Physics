@@ -8,5 +8,6 @@ namespace Physics.Core
 {
     class Unit
     {
+        public static readonly Unit Dimensionless = new Unit();
     }
 }
