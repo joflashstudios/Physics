@@ -1,0 +1,65 @@
+﻿Utility:
+	Updater
+		Separate App
+		Service
+	Bug reporter
+		Service
+	Contact utility
+		Service
+Acheivements:
+	Manager
+	Peristance
+	Display
+	UI
+Machine UI
+Core:
+	Unit System
+		Logic
+		Rendering
+		Conversion
+		Compound units
+	Numeric System
+		Good Trig and Sqrt functions
+		Scientific notation support (UI only?)
+	Machines
+		Display
+		General computation
+		Trigonometry
+		Vectors
+			Support negation
+		Newtonian motion 
+			F = M * A
+			Friction
+			Rotation / Torque
+			Fixed speed motion
+			Motion under uniform accelleration
+				Free fall
+				Horozontal projection (run free fall info into other machines)
+			KE and velocity
+			PE and gravity
+			Work
+			(solve 135 6.39)
+			Weight-mass helper
+			Power
+			Impulse
+			Impact?
+			Uniform circular motion
+			Levers?
+		Density
+		Pressure
+		Temperature?
+		Waves
+		Electricity
+			Gauss's Law
+			Electrical PE
+			Capacitors
+			Resistors
+				Ohm's law
+			Magnetism
+				Moving charges
+			Fraday's Law
+		Light
+			Energy of a photon
+			Quantum stuff
+		Relativity
+			Dilation
