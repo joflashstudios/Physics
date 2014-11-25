@@ -17,6 +17,21 @@ namespace PhysicsService
             return string.Format("You entered: {0}", value);
         }
 
+        public Version[] GetVersions()
+        {
+            return Version.GetVersions();
+        }
+
+        public Version GetLatest()
+        {
+            return Version.GetLatest();
+        }
+
+        public void SaveVersions(Version[] versions)
+        {
+            Version.SaveVersions(versions);
+        }
+
         public CompositeType GetDataUsingDataContract(CompositeType composite)
         {
             if (composite == null)

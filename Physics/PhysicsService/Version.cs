@@ -9,12 +9,12 @@ namespace PhysicsService
 {
     public class Version
     {
-        public string Version { get; set; }
+        public string VersionText { get; set; }
         public double VersionNumber
         {
             get
             {
-                return double.Parse("0." + Version.Replace(".", ""));
+                return double.Parse("0." + VersionText.Replace(".", ""));
             }
         }
         public string Title { get; set; }
